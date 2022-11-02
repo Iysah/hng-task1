@@ -1,0 +1,170 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+body {
+  background: #FFF;
+}
+
+.header {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header > img {
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+  background: #EAECF0;
+  object-fit: contain;
+}
+
+.header > h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #101828;
+  text-transform: capitalize;
+}
+
+.card {
+  padding: 2em;
+}
+
+a {
+  /* Auto layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  margin-bottom: 18px;
+
+  width: 1152px;
+  height: 76px;
+
+  /* Gray/200 */
+  background: #EAECF0;
+  color: #101828;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.socials > a {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+}
+
+.socials > a > img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  
+  padding: 48px 0;
+  margin-top: 4rem;
+  border-top: 1px solid #ccc;
+
+  max-width: 1280px;
+  background: #FFF;
+}
+
+footer > img {
+  width: 190px;
+  height: 32px;
+}
+
+footer > img:last-of-type {
+  width: 170px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #FFF;
+    max-width: 700px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .header > img {
+    width: 88px;  
+    height: 88px;
+    object-fit: contain;
+  }
+
+  .header > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card > a {
+    padding: 24px 32px;
+    width: 90%;
+    height: 68px;
+  }
+
+  footer {
+    max-width: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    
+    /* padding: 48px 0; */
+    margin-top: 4rem;
+    /* border-top: 1px solid #ccc; */
+  }
+  
+  footer > img {
+    width: 190px;
+    height: 32px;
+  }
+}
+
